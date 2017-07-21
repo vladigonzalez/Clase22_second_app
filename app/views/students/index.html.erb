@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Students</h1>
+<h1 style="color: white ; background-color: black; ">Students</h1>
 
-<table>
+<table class="table" style="color: white">
   <thead>
     <tr>
       <th>Name</th>
@@ -16,12 +16,13 @@
       <tr>
         <td><%= student.name %></td>
         <td><%= student.age %></td>
-        <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', student, class:'btn btn-primary' %></td>
+        <td><%= link_to 'Edit', edit_student_path(student), class:'btn btn-second' %></td>
+        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Asi que quieres borrar, estas seguro de los que vas a hacer?' }, class:'btn btn-warning' %></td>
       </tr>
     <% end %>
   </tbody>
+
 </table>
 
 <br>
