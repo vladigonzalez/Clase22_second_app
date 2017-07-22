@@ -1,0 +1,24 @@
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr class='info'>
+      <th> name  </th>
+      <th> age  </th>
+      <th> email  </th>
+    </tr>
+
+  </thead>
+  <tbody>
+    <tr >
+      
+      <% @students.each do |student|%>
+      <td > <%= student.name%> </td>
+      <td> <%= student.age%> </td>
+      <td> <%= student.email%> </td>
+
+    </tr>
+  </tbody>
+  <% end%>
+</table>
+<h1>Pages#landing by Vladimir González</h1>
+<p>Find me in app/views/pages/landing.html.erb</p>
